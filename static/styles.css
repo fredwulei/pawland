@@ -1,0 +1,182 @@
+body {
+    font-family: "Lato", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #68c3d4;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffd700;
+    font-weight: 500;
+    font-size: 50px;
+    margin: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+section {
+    padding: 40px;
+}
+
+section:last-of-type {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 40px;
+    font-weight: normal;
+    color: #68c3d4;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.service {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    color: #68c3d4;
+}
+
+.service p {
+    color: #555;
+}
+
+
+#calendar {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.calendar {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.month-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weekdays {
+    display: flex;
+}
+
+.weekdays div {
+    width: calc(98% / 7);
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.days div {
+    width: calc(98% / 7);
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+    text-align: center;
+}
+
+.days div:last-child {
+    border-right: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+}
+
+.booking-form {
+    margin-top: 20px;
+}
+
+.booking-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.booking-form button {
+    background-color: #68c3d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+    background-color: #4ba8b9;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #f0f0f0;
+}
