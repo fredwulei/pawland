@@ -14,7 +14,7 @@ header {
 header h1 {
     color: #ffd700;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 40px;
     margin: 20px;
 }
 
@@ -117,7 +117,7 @@ footer {
 }
 
 .weekdays div {
-    width: calc(98% / 7);
+    width: calc(96% / 7);
     border-bottom: 1px solid #ddd;
     padding: 5px 0;
     color: #555;
@@ -128,11 +128,11 @@ footer {
 .days {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
+    max-width: 500px;
 }
 
 .days div {
-    width: calc(98% / 7);
+    width: calc(96% / 7);
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd;
