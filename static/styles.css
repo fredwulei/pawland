@@ -2,31 +2,62 @@ body {
     font-family: "Lato", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f0e6eb61;
 }
-
 header {
-    background-color: #68c3d4;
-    padding: 20px;
+    background-color: #f2a3c7; /* Pink color for the header */
+    background-size: 100% 4px; /* Adjust the size of the cream part */
+    background-repeat: no-repeat;
+    height: 200px;
     text-align: center;
+    position: relative; /* Ensure position is relative for stacking the nav on top */
 }
 
-header h1 {
-    color: #ffd700;
-    font-weight: 500;
-    font-size: 40px;
-    margin: 20px;
+.logo-container {
+   position: absolute;
+  display: block;
+  left: 50%;
+  top: 20px;
+  z-index: 999;
+  transform: translate(-50%, 0%);
+}
+
+.logo {
+   width: 320px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fd73b3;
+  width: 100%;
+  padding: 20px;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+   padding: 0 20px;
 }
 
 nav ul li a {
@@ -39,7 +70,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffd700; /* Change color on hover */
 }
-
 section {
     padding: 40px;
 }
@@ -51,17 +81,16 @@ section:last-of-type {
 section h2 {
     font-size: 40px;
     font-weight: normal;
-    color: #68c3d4;
+    color: #fd73b3;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #7e3d5b;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
 }
 
 .service {
