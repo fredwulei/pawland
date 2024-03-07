@@ -4,30 +4,34 @@ body {
     padding: 0;
     background-color: #f0e6eb61;
 }
+
 header {
-    background-color: #f2a3c7; /* Pink color for the header */
-    background-size: 100% 4px; /* Adjust the size of the cream part */
+    background-color: #f2a3c7;
+    /* Pink color for the header */
+    background-size: 100% 4px;
+    /* Adjust the size of the cream part */
     background-repeat: no-repeat;
     height: 200px;
     text-align: center;
-    position: relative; /* Ensure position is relative for stacking the nav on top */
+    position: relative;
+    /* Ensure position is relative for stacking the nav on top */
 }
 
 .logo-container {
-   position: absolute;
-  display: block;
-  left: 50%;
-  top: 20px;
-  z-index: 999;
-  transform: translate(-50%, 0%);
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 20px;
+    z-index: 999;
+    transform: translate(-50%, 0%);
 }
 
 .logo {
-   width: 320px;
-  height: 220px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+    width: 320px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
 }
 
 .logo img {
@@ -38,26 +42,27 @@ header {
 
 nav {
     position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fd73b3;
-  width: 100%;
-  padding: 20px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fd73b3;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 nav ul {
     list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
 }
 
 nav ul li {
     display: inline;
-   padding: 0 20px;
+    padding: 0 20px;
 }
 
 nav ul li a {
@@ -68,8 +73,25 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700; /* Change color on hover */
+    color: #ffd700;
+    /* Change color on hover */
 }
+
+
+@media only screen and (max-width: 800px) {
+    /* Adjust the max-width value as needed for your mobile layout */
+
+    nav ul {
+        display: none;
+        flex-direction: column; /* Stack menu items vertically */
+        text-align: center; /* Center menu items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add some vertical spacing between menu items */
+    }
+}
+
 section {
     padding: 40px;
 }
@@ -86,11 +108,11 @@ section h2 {
 
 footer {
     background-color: #7e3d5b;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .service {
